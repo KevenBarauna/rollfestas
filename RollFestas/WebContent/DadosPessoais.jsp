@@ -13,11 +13,11 @@
 
 
 
-<%
+<%//captura o atributo usuario da sessão, se for nulo ele volta a pagina inicial
 	String usuario = (String)session.getAttribute("usuario");
 if(usuario == null){
 	response.sendRedirect("Login.jsp");
-}else{
+}else{ //senão, exibe a pagina e mensagem de boas vindas
 	out.print("<center>Bem Vindo, " +usuario+ "<center/><br/>");
 }
 

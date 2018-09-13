@@ -6,8 +6,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Flat HTML5/CSS3 Login Form</title>
+<title>Login</title>
 
+<!-- importando nosso arquivo css-->
 <link href="<c:url value='/resources/css/style.css' />" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="css/style.css">
 
@@ -33,10 +34,11 @@
   </div>
 </div>
 
-<%
+<%//verifica se o usuário tem uma sessão ativa no momento.
 String usuario = request.getParameter("usuario");
 String senha = request.getParameter("senha");
 
+//verifica se o usuário é nulo e se os campos estão preenchidos
 if(usuario != null && senha != null && !usuario.isEmpty() && !senha.isEmpty()){
 	session.setAttribute("usuario", usuario);
 	response.sendRedirect("DadosPessoais.jsp");
