@@ -1,0 +1,51 @@
+.BtnLogin{
+   -fx-background-color:  #B0E0E6;
+   -fx-background-radius: 5px;
+   -fx-border-color:  black;
+   -fx-border-width: 2px;
+   -fx-border-style: solid;
+   -fx-border-radius: 5px;
+    
+    
+}
+
+.BtnLogin:hover{
+   -fx-background-color: #EE6363;
+    -fx-background-radius: 5px;
+   -fx-border-color: #8B1A1A;
+   -fx-border-width: 2px;
+   -fx-border-style: solid;
+   -fx-border-radius: 5px;
+   -fx-text-fill: #FFF;
+}
+
+.BtnLogin:pressed{
+   -fx-background-color: #98FB98;
+   -fx-text-fill: #FFF;
+}
+
+.Btn{
+    -fx-background-color:  #98FB98;
+    -fx-background-radius: 5px;
+   -fx-border-color:  #B0E0E6;
+   -fx-border-width: 2px;
+   -fx-border-style: solid;
+   -fx-border-radius: 5px;
+}
+
+.Btn:hover{
+   -fx-background-color: #EE6363;
+    -fx-background-radius: 5px;
+   -fx-border-color: #8B1A1A;
+   -fx-border-width: 2px;
+   -fx-border-style: solid;
+   -fx-border-radius: 5px;
+   -fx-text-fill: #FFF;
+}
+
+.Btn:pressed{
+   -fx-background-color: #B0E0E6;
+   -fx-text-fill: #FFF;
+}
+
+

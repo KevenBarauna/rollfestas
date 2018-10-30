@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFXMLController">
+   <children>
+      <VBox alignment="CENTER" layoutX="-3.0" prefHeight="400.0" prefWidth="204.0" style="-fx-background-color: #87CEFA; -fx-border-color: black;">
+         <children>
+            <Label text="Olá,">
+               <font>
+                  <Font name="Ebrima Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label text="Seja Bem Vindo">
+               <font>
+                  <Font name="Ebrima Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Para Continuar Faça Login">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Pane layoutX="201.0" prefHeight="400.0" prefWidth="400.0">
+         <children>
+            <TextField fx:id="txtUsuario" layoutX="125.0" layoutY="200.0" prefHeight="25.0" prefWidth="163.0" promptText="Usuario@rollfestas.com.br" />
+            <PasswordField fx:id="pswSenha" layoutX="126.0" layoutY="242.0" onKeyPressed="#txtPressed" prefHeight="25.0" prefWidth="163.0" promptText="***********" />
+            <Button fx:id="btnLogar" layoutX="127.0" layoutY="278.0" mnemonicParsing="false" onAction="#Logar" onKeyPressed="#botaoPressed" prefHeight="31.0" prefWidth="163.0" styleClass="BtnLogin" stylesheets="@../src/stylesheet.css" text="Logar" />
+            <Label layoutX="125.0" layoutY="183.0" text="Usuário:" />
+            <Label layoutX="125.0" layoutY="225.0" text="Senha:" />
+            <ImageView fitHeight="133.0" fitWidth="244.0" layoutX="87.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../src/rollfestaslogo.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
