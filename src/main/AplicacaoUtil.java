@@ -36,21 +36,21 @@ public class AplicacaoUtil {
     
     public void irParaTela(String nomeTela) {
         try {
-            System.out.println("Carrega o arquivo da tela desejada");
+            
              FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/".concat(nomeTela)));
              Parent root = loader.load();
             
-            System.out.println("Cria uma nova cena para a tela e adiciona no palco (telaAtual)");
+          
             Scene scene = new Scene(root);
             scene.getStylesheets().add(getClass().getResource("/src/stylesheet.css").toExternalForm());
             this.telaAtual.setScene(scene);
             this.telaAtual.centerOnScreen();
-            System.out.println("Exibe o palco caso o mesmo não esteja sendo exibido");
+            
             if(!this.telaAtual.isShowing()){
                 this.telaAtual.show();
             }
         }catch(Exception e){
-        	System.out.println("entrou no catch");
+       
             System.err.println("Ocorreu um erro ao tentar navegar para tela: ".concat(nomeTela).concat(" ".concat(e.getMessage())));
             e.printStackTrace();
            //exibe uma mensagem caso a tela não tenha sido encontrada + erro original
@@ -59,21 +59,20 @@ public class AplicacaoUtil {
     
     public void novaTela(String nomeTela) {
         try {
-            System.out.println("Carrega o arquivo da tela desejada");
+            
              FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/".concat(nomeTela)));
              Parent root = loader.load();
-            
-            System.out.println("Cria uma nova cena para a tela e adiciona no palco (telaAtual)");
+           
             Scene scene = new Scene(root);
             Stage stage = new Stage();
             stage.initOwner(telaAtual);//indica a tela pai para esta stage que será a filha
             stage.initModality(Modality.APPLICATION_MODAL);            
             stage.setScene(scene);
             
-            System.out.println("Exibe o palco caso o mesmo não esteja sendo exibido");
+           
            stage.showAndWait();
         }catch(Exception e){
-        	System.out.println("entrou no catch");
+        	
             System.err.println("Ocorreu um erro ao tentar navegar para tela: ".concat(nomeTela).concat(" ".concat(e.getMessage())));
             e.printStackTrace();
            //exibe uma mensagem caso a tela não tenha sido encontrada + erro original

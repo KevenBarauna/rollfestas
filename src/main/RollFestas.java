@@ -27,6 +27,8 @@ public class RollFestas extends Application {
         //stage.getIcons().add(new Image("file:icoKP3.png"));
         AplicacaoUtil.getInstancia().setTelaAtual(primaryStage);
         AplicacaoUtil.getInstancia().irParaTela("LoginFXML.fxml");
+        
+       
             }
    
    

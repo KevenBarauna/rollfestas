@@ -13,6 +13,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import main.AplicacaoUtil;
+import main.Conexao;
 
 /**
  * FXML Controller class
@@ -36,6 +37,7 @@ public class LoginFXMLController implements Initializable {
         
         if((txtUsuario.getText().equals("rollfestas")  && txtUsuario.getText() != null) &&
                 (pswSenha.getText().equals("@admin") && pswSenha.getText() != null)){
+            Conexao con = new Conexao();
             AplicacaoUtil.getInstancia().irParaTela("PrincipalFXML.fxml");
         }else{
            if(txtUsuario.getText().equals("") || pswSenha.getText().equals("")){
@@ -58,6 +60,7 @@ public void txtPressed(KeyEvent ke)
     {
         if((txtUsuario.getText().equals("rollfestas")  && txtUsuario.getText() != null) &&
                 (pswSenha.getText().equals("@admin") && pswSenha.getText() != null)){
+            Conexao con = new Conexao();
             AplicacaoUtil.getInstancia().irParaTela("PrincipalFXML.fxml");
         } else{
            if(txtUsuario.getText().equals("") || pswSenha.getText().equals("")){
@@ -77,6 +80,7 @@ public void botaoPressed(KeyEvent ke)
     {
         if((txtUsuario.getText().equals("rollfestas")  && txtUsuario.getText() != null) &&
                 (pswSenha.getText().equals("@admin") && pswSenha.getText() != null)){
+            Conexao con = new Conexao();
             AplicacaoUtil.getInstancia().irParaTela("PrincipalFXML.fxml");
         } else{
            if(txtUsuario.getText().equals("") || pswSenha.getText().equals("")){
