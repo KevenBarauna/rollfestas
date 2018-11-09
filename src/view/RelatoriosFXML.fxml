@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RelatoriosFXMLController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1000.0" layoutX="-2.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../src/Fundo.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btninicio" layoutX="20.0" layoutY="14.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="70.0" style="-fx-background-color: #ffde00;" text="Inicio" />
+      <Label layoutX="166.0" layoutY="84.0" text="Fechamento de caixa">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ListView fx:id="GridDinheiro" layoutX="37.0" layoutY="164.0" prefHeight="482.0" prefWidth="201.0" />
+      <Label layoutX="110.0" layoutY="138.0" text="Dinheiro" />
+      <Label layoutX="333.0" layoutY="138.0" text="Cartão" />
+      <ListView fx:id="GridCartao" layoutX="259.0" layoutY="164.0" prefHeight="482.0" prefWidth="200.0" />
+      <Separator layoutX="536.0" layoutY="90.0" orientation="VERTICAL" prefHeight="686.0" prefWidth="12.0" />
+      <Label fx:id="lblValorTotalDinheiro" layoutX="47.0" layoutY="660.0" text="Valor Total:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblValorTotalCartao" layoutX="278.0" layoutY="662.0" text="Valor Total:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCompararMes" layoutX="822.0" layoutY="177.0" mnemonicParsing="false" style="-fx-background-color: #22bdf0;" text="Comparar" textFill="WHITE" />
+      <Label layoutX="592.0" layoutY="181.0" text="Comparar mês passado com a mês atual" />
+      <Label layoutX="592.0" layoutY="252.0" text="Comparar com o mesmo dia do mês passado" />
+      <Label layoutX="610.0" layoutY="437.0" text="Periodo atual" />
+      <DatePicker fx:id="DataAtual" layoutX="702.0" layoutY="433.0" />
+      <DatePicker fx:id="DataPassada" layoutX="702.0" layoutY="479.0" />
+      <Label layoutX="604.0" layoutY="483.0" text="Peiodo passado" />
+      <Button fx:id="btnCompararDia" layoutX="845.0" layoutY="248.0" mnemonicParsing="false" style="-fx-background-color: #22bdf0;" text="Comparar" textFill="WHITE" />
+   </children>
+</AnchorPane>
