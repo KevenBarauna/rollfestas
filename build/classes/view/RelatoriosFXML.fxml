@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1000.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.RelatoriosFXMLController">
+   <children>
+      <Button fx:id="btninicio" layoutX="20.0" layoutY="14.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="70.0" text="Inicio" />
+      <Label layoutX="166.0" layoutY="84.0" text="Fechamento de caixa">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ListView layoutX="37.0" layoutY="164.0" prefHeight="482.0" prefWidth="201.0" />
+      <Label layoutX="110.0" layoutY="138.0" text="Dinheiro" />
+      <Label layoutX="333.0" layoutY="138.0" text="Cartão" />
+      <ListView layoutX="259.0" layoutY="164.0" prefHeight="482.0" prefWidth="200.0" />
+      <Separator layoutX="536.0" layoutY="50.0" orientation="VERTICAL" prefHeight="726.0" prefWidth="16.0" />
+      <Label layoutX="47.0" layoutY="660.0" text="Valor Total:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="278.0" layoutY="662.0" text="Valor Total:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="807.0" layoutY="72.0" mnemonicParsing="false" text="Comparar" />
+      <Label layoutX="577.0" layoutY="76.0" text="Comparar mês passado com a mês atual" />
+      <Label layoutX="577.0" layoutY="147.0" text="Comparar com o mesmo dia do mês passado" />
+      <Label layoutX="613.0" layoutY="363.0" text="Periodo atual" />
+      <DatePicker layoutX="705.0" layoutY="359.0" />
+      <DatePicker layoutX="705.0" layoutY="405.0" />
+      <Label layoutX="607.0" layoutY="409.0" text="Peiodo passado" />
+      <Button layoutX="830.0" layoutY="143.0" mnemonicParsing="false" text="Comparar" />
+   </children>
+</AnchorPane>

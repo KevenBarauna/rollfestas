@@ -1,11 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EventosFXMLController">
-    
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EventosFXMLController">
+   <children>
+      <DatePicker fx:id="dataEvento" layoutX="656.0" layoutY="181.0" prefHeight="22.0" prefWidth="179.0" />
+      <ListView fx:id="ListEventos" layoutX="26.0" layoutY="147.0" prefHeight="536.0" prefWidth="292.0" />
+      <Button fx:id="btnEditarEvento" layoutX="26.0" layoutY="710.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="122.0" style="-fx-background-color: #22bdf0;" text="Editar evento" textFill="WHITE" />
+      <Button fx:id="btnDeletarEvento" layoutX="26.0" layoutY="751.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="122.0" style="-fx-background-color: #e51d47;" text="Deletar evento" textFill="WHITE" />
+      <Button fx:id="btnAdicionarEvento" layoutX="841.0" layoutY="739.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="122.0" style="-fx-background-color: #13e257;" text="Adicionar evento" textFill="WHITE" />
+      <Label layoutX="125.0" layoutY="113.0" prefHeight="20.0" prefWidth="108.0" text="Lista de eventos">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="557.0" layoutY="185.0" text="Data do Evento:" />
+      <Label layoutX="557.0" layoutY="234.0" text="Hora do Evento:" />
+      <TextField fx:id="horaEvento" layoutX="656.0" layoutY="230.0" prefHeight="25.0" prefWidth="155.0" promptText="Horario do convite" />
+      <Label layoutX="557.0" layoutY="291.0" text="Local do evento:" />
+      <TextArea fx:id="enderecoEvento" layoutX="656.0" layoutY="285.0" prefHeight="64.0" prefWidth="155.0" promptText="Endereço completo" />
+      <Label layoutX="583.0" layoutY="478.0" text="Filmagem:" />
+      <CheckBox fx:id="cbFoto" layoutX="655.0" layoutY="478.0" mnemonicParsing="false" text="Fotografia" />
+      <CheckBox fx:id="cbFotoFilmagem" layoutX="655.0" layoutY="506.0" mnemonicParsing="false" text="Fotografia e Filmagem" />
+      <Label layoutX="667.0" layoutY="113.0" text="Novo Evento">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="599.0" layoutY="392.0" text="Nome:" />
+      <Label layoutX="586.0" layoutY="423.0" text="Telefone:" />
+      <TextField fx:id="nomeEvento" layoutX="656.0" layoutY="383.0" promptText="Nome do Cliente" />
+      <TextField fx:id="telefoneEvento" layoutX="656.0" layoutY="419.0" promptText="(71) 9 9310 - 6733" />
+      <Separator layoutX="395.0" layoutY="15.0" orientation="VERTICAL" prefHeight="762.0" prefWidth="25.0" />
+      <Button fx:id="btnInicio" layoutX="24.0" layoutY="17.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="76.0" style="-fx-background-color: #ffde00;" text="Inicio">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <TextField fx:id="txteditarevento" layoutX="157.0" layoutY="710.0" prefHeight="25.0" prefWidth="108.0" promptText="ID do evento" />
+      <TextField fx:id="txtdeletarevento" layoutX="157.0" layoutY="751.0" prefHeight="25.0" prefWidth="108.0" promptText="ID do evento" />
+      <TextField fx:id="txtvalortotal" layoutX="651.0" layoutY="562.0" promptText="R$ " />
+      <Label fx:id="lblvalortotal" layoutX="582.0" layoutY="566.0" text="Valor total:" />
+      <Label layoutX="580.0" layoutY="601.0" text="Valor Pago:" />
+      <TextField fx:id="txtvalorpago" layoutX="651.0" layoutY="597.0" promptText="R$ " />
+   </children>
 </AnchorPane>
