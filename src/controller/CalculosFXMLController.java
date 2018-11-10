@@ -12,6 +12,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import main.AplicacaoUtil;
 
 public class CalculosFXMLController implements Initializable {
 
@@ -98,9 +99,10 @@ public class CalculosFXMLController implements Initializable {
      
     }    
     
-     @FXML
-    void VoltaInicio(ActionEvent event) {
-       
+     
+    @FXML
+    void voltaInicio(ActionEvent event) {
+        AplicacaoUtil.getInstancia().irParaTela("PrincipalFXML.fxml");
     }
 
     @FXML

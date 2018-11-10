@@ -7,9 +7,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PagamentosFXMLController">
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CalculosFXMLController">
    <children>
-      <Button fx:id="btnInicio" layoutX="33.0" layoutY="29.0" mnemonicParsing="false" onAction="#VoltaInicio" prefHeight="37.0" prefWidth="110.0" style="-fx-background-color: #ffde00;" text="Incio" textFill="WHITE">
+      <Button fx:id="btnInicio" layoutX="33.0" layoutY="29.0" mnemonicParsing="false" onAction="#voltaInicio" prefHeight="37.0" prefWidth="110.0" style="-fx-background-color: #ffde00; -fx-border-color: black;" text="Incio" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font></Button>
@@ -52,18 +52,18 @@
             <Font size="14.0" />
          </font></Label>
       <Button fx:id="btnA3Calcular" layoutX="594.0" layoutY="221.0" mnemonicParsing="false" onAction="#CalclularA3" text="Calcular" />
-      <Label fx:id="lblA3Quantidade" layoutX="710.0" layoutY="224.0" prefHeight="17.0" prefWidth="83.0" text="Quantidade:">
+      <Label fx:id="lblA3Quantidade" layoutX="710.0" layoutY="224.0" prefHeight="20.0" prefWidth="227.0" text="Quantidade:">
          <font>
             <Font size="14.0" />
          </font></Label>
       <TextField fx:id="txtmetroAltura" layoutX="286.0" layoutY="400.0" prefHeight="25.0" prefWidth="52.0" promptText="10" />
       <TextField fx:id="txtmetroLargura" layoutX="459.0" layoutY="401.0" prefHeight="25.0" prefWidth="52.0" promptText="20" />
       <Button fx:id="btnMetroCalcular" layoutX="599.0" layoutY="401.0" mnemonicParsing="false" onAction="#CalcularMetro" text="Calcular" />
-      <Label fx:id="lblQuantidade100x50" layoutX="723.0" layoutY="375.0" text="Quantidade 100x50 :" />
+      <Label fx:id="lblQuantidade100x50" layoutX="723.0" layoutY="375.0" prefHeight="17.0" prefWidth="261.0" />
       <TextField fx:id="txtbannerAltura" layoutX="249.0" layoutY="569.0" prefHeight="25.0" prefWidth="52.0" promptText="1,00" />
       <TextField fx:id="txtbannerLargura" layoutX="249.0" layoutY="603.0" prefHeight="25.0" prefWidth="52.0" promptText="0,70" />
       <Button fx:id="btnCalcularBanner" layoutX="726.0" layoutY="550.0" mnemonicParsing="false" onAction="#CalcularBanner" prefHeight="25.0" prefWidth="88.0" text="Calcular" />
-      <Label fx:id="lblQuantidade100x100" layoutX="723.0" layoutY="417.0" text="Quantidade 100x100 :" />
+      <Label fx:id="lblQuantidade100x100" layoutX="723.0" layoutY="417.0" prefHeight="17.0" prefWidth="261.0" />
       <CheckBox fx:id="cbAmador" layoutX="338.0" layoutY="554.0" mnemonicParsing="false" text="Amador" />
       <CheckBox fx:id="cbProfissional" layoutX="338.0" layoutY="581.0" mnemonicParsing="false" text="Profissional" />
       <CheckBox fx:id="ckSemAcabamento" layoutX="449.0" layoutY="554.0" mnemonicParsing="false" text="Sem Acabamento" />
@@ -80,5 +80,7 @@
          </font></Label>
       <CheckBox fx:id="cbcriararte" layoutX="613.0" layoutY="595.0" mnemonicParsing="false" text="Criar arte" />
       <CheckBox fx:id="cbartepronta" layoutX="616.0" layoutY="617.0" mnemonicParsing="false" text="Arte pronta" />
+      <Label layoutX="721.0" layoutY="354.0" text="Quantidade 100x50 :" />
+      <Label layoutX="721.0" layoutY="395.0" text="Quantidade 100x100 :" />
    </children>
 </AnchorPane>

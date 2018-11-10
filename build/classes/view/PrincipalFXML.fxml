@@ -11,16 +11,16 @@
 
 <AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #B0E0E6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PrincipalFXMLController">
    <children>
+      <ImageView fitHeight="700.0" fitWidth="883.0" layoutX="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../src/Fundo.jpg" />
+         </image>
+      </ImageView>
       <Pane prefHeight="700.0" prefWidth="263.0" style="-fx-background-color: white; -fx-border-color: #87CEFA;">
          <children>
-            <VBox layoutY="175.0" prefHeight="525.0" prefWidth="263.0" spacing="10.0">
+            <VBox layoutY="175.0" prefHeight="525.0" prefWidth="263.0" spacing="15.0">
                <children>
                   <Button fx:id="btnVendas" mnemonicParsing="false" prefHeight="60.0" prefWidth="250.0" styleClass="Btn" stylesheets="@../src/stylesheet.css" text="Vendas">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Button>
-                  <Button fx:id="btnPagamentos" mnemonicParsing="false" prefHeight="60.0" prefWidth="250.0" styleClass="Btn" stylesheets="@../src/stylesheet.css" text="Pagamentos">
                      <font>
                         <Font size="18.0" />
                      </font>
@@ -35,7 +35,7 @@
                         <Font size="18.0" />
                      </font>
                   </Button>
-                  <Button fx:id="btnEventos" mnemonicParsing="false" prefHeight="60.0" prefWidth="250.0" styleClass="Btn" stylesheets="@../src/stylesheet.css" text="Eventos">
+                  <Button fx:id="btnEventos" mnemonicParsing="false" onAction="#vaiParaEventos" prefHeight="60.0" prefWidth="250.0" styleClass="Btn" stylesheets="@../src/stylesheet.css" text="Eventos">
                      <font>
                         <Font size="18.0" />
                      </font>
@@ -45,7 +45,7 @@
                         <Font size="18.0" />
                      </font>
                   </Button>
-                  <Button fx:id="btnCalcular" mnemonicParsing="false" prefHeight="60.0" prefWidth="250.0" styleClass="Btn" stylesheets="@../src/stylesheet.css" text="Calcular">
+                  <Button fx:id="btnCalcular" mnemonicParsing="false" onAction="#vaiParaCalculo" prefHeight="60.0" prefWidth="250.0" styleClass="Btn" stylesheets="@../src/stylesheet.css" text="Calcular">
                      <font>
                         <Font size="18.0" />
                      </font>
@@ -57,7 +57,7 @@
                   </Button>
                </children>
                <padding>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="8.0" />
                </padding>
             </VBox>
             <ImageView fitHeight="143.0" fitWidth="256.0" layoutX="4.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">

@@ -66,7 +66,8 @@ public class AplicacaoUtil {
             Scene scene = new Scene(root);
             Stage stage = new Stage();
             stage.initOwner(telaAtual);//indica a tela pai para esta stage que será a filha
-            stage.initModality(Modality.APPLICATION_MODAL);            
+            stage.initModality(Modality.APPLICATION_MODAL); 
+            stage.centerOnScreen();
             stage.setScene(scene);
             
            

@@ -21,10 +21,8 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <ListView fx:id="GridDinheiro" layoutX="37.0" layoutY="164.0" prefHeight="482.0" prefWidth="201.0" />
       <Label layoutX="110.0" layoutY="138.0" text="Dinheiro" />
-      <Label layoutX="333.0" layoutY="138.0" text="Cartão" />
-      <ListView fx:id="GridCartao" layoutX="259.0" layoutY="164.0" prefHeight="482.0" prefWidth="200.0" />
+      <Label layoutX="361.0" layoutY="138.0" text="Cartão" />
       <Separator layoutX="536.0" layoutY="90.0" orientation="VERTICAL" prefHeight="686.0" prefWidth="12.0" />
       <Label fx:id="lblValorTotalDinheiro" layoutX="47.0" layoutY="660.0" text="Valor Total:">
          <font>
@@ -44,5 +42,17 @@
       <DatePicker fx:id="DataPassada" layoutX="702.0" layoutY="479.0" />
       <Label layoutX="604.0" layoutY="483.0" text="Peiodo passado" />
       <Button fx:id="btnCompararDia" layoutX="845.0" layoutY="248.0" mnemonicParsing="false" style="-fx-background-color: #22bdf0;" text="Comparar" textFill="WHITE" />
+      <TableView layoutX="33.0" layoutY="161.0" prefHeight="439.0" prefWidth="200.0">
+        <columns>
+          <TableColumn prefWidth="119.0" text="Descrição" />
+          <TableColumn text="Valor" />
+        </columns>
+      </TableView>
+      <TableView layoutX="278.0" layoutY="161.0" prefHeight="439.0" prefWidth="200.0">
+        <columns>
+          <TableColumn prefWidth="121.0" text="Descrição" />
+          <TableColumn prefWidth="78.0" text="Valor" />
+        </columns>
+      </TableView>
    </children>
 </AnchorPane>
