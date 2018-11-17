@@ -11,21 +11,20 @@ public class Conexao {
   private Connection con;
   
   public Conexao(){
-      url = "jdbc:postgresql://localhost:5432/rollfestas";
-      usuario = "postgres";
-      senha = "teste";
-      
-      try {
-          
-          Class.forName("org.postgresql.Driver");
-          con = DriverManager.getConnection(url,usuario,senha);
-          System.out.println("Conexão Bem Sucedida");
-          
-          
-      } catch (Exception e) {
-       e.printStackTrace();
-      }
-  }
+  url = "jdbc:postgresql://localhost:5432/rollfestas";
+ usuario = "postgres";
+senha = "teste";
     
+    try {
+         
+          Class.forName("org.postgresql.Driver");
+         con = DriverManager.getConnection(url,usuario,senha);
+          System.out.println("Conexão Bem Sucedida");
+         
+    } catch (Exception e) {
+      e.printStackTrace();
+   }
+  }
+   
     
 }

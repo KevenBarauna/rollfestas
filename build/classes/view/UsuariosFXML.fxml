@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="429.0" prefWidth="772.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UsuariosFXMLController">
+   <children>
+      <Label layoutX="298.0" layoutY="20.0" text="Cadastro de Usuário" />
+      <Label layoutX="15.0" layoutY="63.0" text="Nome:" />
+      <Label layoutX="15.0" layoutY="110.0" text="Login:" />
+      <Label layoutX="14.0" layoutY="153.0" text="Senha:" />
+      <TextField fx:id="txtNome" layoutX="58.0" layoutY="59.0" prefHeight="25.0" prefWidth="258.0" />
+      <TextField fx:id="txtLogin" layoutX="58.0" layoutY="106.0" prefHeight="25.0" prefWidth="258.0" />
+      <PasswordField fx:id="pswSenha" layoutX="58.0" layoutY="149.0" prefHeight="25.0" prefWidth="258.0" />
+      <Button fx:id="btnSalvar" layoutX="55.0" layoutY="245.0" mnemonicParsing="false" onAction="#salvarUsuario" prefHeight="42.0" prefWidth="264.0" styleClass="BtnLogin" stylesheets="@../src/stylesheet.css" text="Salvar" />
+      <Button fx:id="btnCadastrar" layoutX="55.0" layoutY="193.0" mnemonicParsing="false" onAction="#cadastrarUsuario" prefHeight="42.0" prefWidth="264.0" styleClass="BtnLogin" stylesheets="@../src/stylesheet.css" text="Cadastrar" />
+      <Button fx:id="btnExcluir" layoutX="55.0" layoutY="301.0" mnemonicParsing="false" onAction="#excluirUsuario" prefHeight="42.0" prefWidth="264.0" styleClass="BtnLogin" stylesheets="@../src/stylesheet.css" text="Excluir" />
+      <TableView fx:id="tbUsuario" layoutX="335.0" layoutY="53.0" onMouseClicked="#desabilitaBotoes" prefHeight="347.0" prefWidth="432.0">
+        <columns>
+          <TableColumn fx:id="tbcId" prefWidth="40.0" text="Id" />
+          <TableColumn fx:id="tbcNome" prefWidth="197.0" text="Nome" />
+            <TableColumn fx:id="tbcLogin" prefWidth="227.0" text="Login" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnCancelar" layoutX="55.0" layoutY="356.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="42.0" prefWidth="264.0" styleClass="BtnLogin" stylesheets="@../src/stylesheet.css" text="Cancelar" />
+   </children>
+</AnchorPane>

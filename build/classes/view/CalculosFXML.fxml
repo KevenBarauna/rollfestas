@@ -7,80 +7,76 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CalculosFXMLController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="883.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CalculosFXMLController">
    <children>
-      <Button fx:id="btnInicio" layoutX="33.0" layoutY="29.0" mnemonicParsing="false" onAction="#voltaInicio" prefHeight="37.0" prefWidth="110.0" style="-fx-background-color: #ffde00; -fx-border-color: black;" text="Incio" textFill="WHITE">
-         <font>
-            <Font size="14.0" />
-         </font></Button>
-      <Label layoutX="176.0" layoutY="160.0" text="A3">
+      <Label layoutX="48.0" layoutY="14.0" text="A3">
          <font>
             <Font size="24.0" />
          </font></Label>
-      <Label layoutX="154.0" layoutY="327.0" text="Adesivo Metro">
+      <Label layoutX="26.0" layoutY="181.0" text="Adesivo Metro">
          <font>
             <Font size="24.0" />
          </font></Label>
-      <Label layoutX="154.0" layoutY="509.0" text="Banner">
+      <Label layoutX="26.0" layoutY="363.0" text="Banner">
          <font>
             <Font size="24.0" />
          </font></Label>
-      <TextField fx:id="txta3Altura" layoutX="286.0" layoutY="220.0" prefHeight="25.0" prefWidth="52.0" promptText="5" />
-      <Label layoutX="231.0" layoutY="215.0" prefHeight="35.0" prefWidth="64.0" text="Altura">
+      <TextField fx:id="txta3Altura" layoutX="158.0" layoutY="74.0" prefHeight="25.0" prefWidth="52.0" promptText="5" />
+      <Label layoutX="103.0" layoutY="69.0" prefHeight="35.0" prefWidth="64.0" text="Altura">
          <font>
             <Font size="14.0" />
          </font></Label>
-      <Label layoutX="388.0" layoutY="223.0" text="Largura">
+      <Label layoutX="260.0" layoutY="77.0" text="Largura">
          <font>
             <Font size="14.0" />
          </font></Label>
-      <TextField fx:id="txta3Largura" layoutX="459.0" layoutY="220.0" prefHeight="25.0" prefWidth="52.0" promptText="5" />
-      <Label layoutX="232.0" layoutY="402.0" text="Altura">
+      <TextField fx:id="txta3Largura" layoutX="331.0" layoutY="74.0" prefHeight="25.0" prefWidth="52.0" promptText="5" />
+      <Label layoutX="104.0" layoutY="256.0" text="Altura">
          <font>
             <Font size="14.0" />
          </font></Label>
-      <Label layoutX="389.0" layoutY="403.0" text="Largura">
+      <Label layoutX="261.0" layoutY="257.0" text="Largura">
          <font>
             <Font size="14.0" />
          </font></Label>
-      <Label layoutX="190.0" layoutY="571.0" text="Altura">
+      <Label layoutX="62.0" layoutY="425.0" text="Altura">
          <font>
             <Font size="14.0" />
          </font></Label>
-      <Label layoutX="189.0" layoutY="605.0" text="Largura">
+      <Label layoutX="61.0" layoutY="459.0" text="Largura">
          <font>
             <Font size="14.0" />
          </font></Label>
-      <Button fx:id="btnA3Calcular" layoutX="594.0" layoutY="221.0" mnemonicParsing="false" onAction="#CalclularA3" text="Calcular" />
-      <Label fx:id="lblA3Quantidade" layoutX="710.0" layoutY="224.0" prefHeight="20.0" prefWidth="227.0" text="Quantidade:">
+      <Button fx:id="btnA3Calcular" layoutX="466.0" layoutY="75.0" mnemonicParsing="false" onAction="#CalclularA3" text="Calcular" />
+      <Label fx:id="lblA3Quantidade" layoutX="582.0" layoutY="78.0" prefHeight="20.0" prefWidth="227.0" text="Quantidade:">
          <font>
             <Font size="14.0" />
          </font></Label>
-      <TextField fx:id="txtmetroAltura" layoutX="286.0" layoutY="400.0" prefHeight="25.0" prefWidth="52.0" promptText="10" />
-      <TextField fx:id="txtmetroLargura" layoutX="459.0" layoutY="401.0" prefHeight="25.0" prefWidth="52.0" promptText="20" />
-      <Button fx:id="btnMetroCalcular" layoutX="599.0" layoutY="401.0" mnemonicParsing="false" onAction="#CalcularMetro" text="Calcular" />
-      <Label fx:id="lblQuantidade100x50" layoutX="723.0" layoutY="375.0" prefHeight="17.0" prefWidth="261.0" />
-      <TextField fx:id="txtbannerAltura" layoutX="249.0" layoutY="569.0" prefHeight="25.0" prefWidth="52.0" promptText="1,00" />
-      <TextField fx:id="txtbannerLargura" layoutX="249.0" layoutY="603.0" prefHeight="25.0" prefWidth="52.0" promptText="0,70" />
-      <Button fx:id="btnCalcularBanner" layoutX="726.0" layoutY="550.0" mnemonicParsing="false" onAction="#CalcularBanner" prefHeight="25.0" prefWidth="88.0" text="Calcular" />
-      <Label fx:id="lblQuantidade100x100" layoutX="723.0" layoutY="417.0" prefHeight="17.0" prefWidth="261.0" />
-      <CheckBox fx:id="cbAmador" layoutX="338.0" layoutY="554.0" mnemonicParsing="false" text="Amador" />
-      <CheckBox fx:id="cbProfissional" layoutX="338.0" layoutY="581.0" mnemonicParsing="false" text="Profissional" />
-      <CheckBox fx:id="ckSemAcabamento" layoutX="449.0" layoutY="554.0" mnemonicParsing="false" text="Sem Acabamento" />
-      <CheckBox fx:id="cbVarinha" layoutX="449.0" layoutY="581.0" mnemonicParsing="false" text="Varinha" />
-      <CheckBox fx:id="ckChassis" layoutX="449.0" layoutY="606.0" mnemonicParsing="false" text="Chassis" />
-      <CheckBox fx:id="cbIlhois" layoutX="449.0" layoutY="629.0" mnemonicParsing="false" text="Ilhois" />
-      <TextField fx:id="txtilhois" layoutX="507.0" layoutY="625.0" prefHeight="25.0" prefWidth="67.0" promptText="6" />
-      <CheckBox fx:id="cbFotoEstudio" layoutX="613.0" layoutY="554.0" mnemonicParsing="false" text="Foto Estúdio" />
-      <Separator layoutX="14.0" layoutY="281.0" prefHeight="6.0" prefWidth="956.0" />
-      <Separator layoutX="11.0" layoutY="474.0" prefHeight="6.0" prefWidth="975.0" />
-      <Label fx:id="lblValorTotalBanner" layoutX="735.0" layoutY="593.0" text="Valor Total:">
+      <TextField fx:id="txtmetroAltura" layoutX="158.0" layoutY="254.0" prefHeight="25.0" prefWidth="52.0" promptText="10" />
+      <TextField fx:id="txtmetroLargura" layoutX="331.0" layoutY="255.0" prefHeight="25.0" prefWidth="52.0" promptText="20" />
+      <Button fx:id="btnMetroCalcular" layoutX="471.0" layoutY="255.0" mnemonicParsing="false" onAction="#CalcularMetro" text="Calcular" />
+      <Label fx:id="lblQuantidade100x50" layoutX="593.0" layoutY="225.0" prefHeight="17.0" prefWidth="261.0" />
+      <TextField fx:id="txtbannerAltura" layoutX="121.0" layoutY="423.0" prefHeight="25.0" prefWidth="52.0" promptText="1,00" />
+      <TextField fx:id="txtbannerLargura" layoutX="121.0" layoutY="457.0" prefHeight="25.0" prefWidth="52.0" promptText="0,70" />
+      <Button fx:id="btnCalcularBanner" layoutX="728.0" layoutY="412.0" mnemonicParsing="false" onAction="#CalcularBanner" prefHeight="25.0" prefWidth="88.0" text="Calcular" />
+      <Label fx:id="lblQuantidade100x100" layoutX="593.0" layoutY="265.0" prefHeight="17.0" prefWidth="261.0" />
+      <CheckBox fx:id="cbAmador" layoutX="210.0" layoutY="408.0" mnemonicParsing="false" text="Amador" />
+      <CheckBox fx:id="cbProfissional" layoutX="210.0" layoutY="435.0" mnemonicParsing="false" text="Profissional" />
+      <CheckBox fx:id="ckSemAcabamento" layoutX="321.0" layoutY="408.0" mnemonicParsing="false" text="Sem Acabamento" />
+      <CheckBox fx:id="cbVarinha" layoutX="321.0" layoutY="435.0" mnemonicParsing="false" text="Varinha" />
+      <CheckBox fx:id="ckChassis" layoutX="321.0" layoutY="460.0" mnemonicParsing="false" text="Chassis" />
+      <CheckBox fx:id="cbIlhois" layoutX="321.0" layoutY="483.0" mnemonicParsing="false" text="Ilhois" />
+      <TextField fx:id="txtilhois" layoutX="379.0" layoutY="479.0" prefHeight="25.0" prefWidth="67.0" promptText="6" />
+      <CheckBox fx:id="cbFotoEstudio" layoutX="485.0" layoutY="408.0" mnemonicParsing="false" text="Foto Estúdio" />
+      <Separator layoutX="120.0" layoutY="157.0" prefHeight="3.0" prefWidth="746.0" />
+      <Separator layoutX="117.0" layoutY="339.0" prefHeight="3.0" prefWidth="746.0" />
+      <Label fx:id="lblValorTotalBanner" layoutX="607.0" layoutY="447.0" text="Valor Total:">
          <font>
             <Font size="14.0" />
          </font></Label>
-      <CheckBox fx:id="cbcriararte" layoutX="613.0" layoutY="595.0" mnemonicParsing="false" text="Criar arte" />
-      <CheckBox fx:id="cbartepronta" layoutX="616.0" layoutY="617.0" mnemonicParsing="false" text="Arte pronta" />
-      <Label layoutX="721.0" layoutY="354.0" text="Quantidade 100x50 :" />
-      <Label layoutX="721.0" layoutY="395.0" text="Quantidade 100x100 :" />
+      <CheckBox fx:id="cbcriararte" layoutX="485.0" layoutY="449.0" mnemonicParsing="false" text="Criar arte" />
+      <CheckBox fx:id="cbartepronta" layoutX="488.0" layoutY="471.0" mnemonicParsing="false" text="Arte pronta" />
+      <Label layoutX="593.0" layoutY="208.0" text="Quantidade 100x50 :" />
+      <Label layoutX="593.0" layoutY="249.0" text="Quantidade 100x100 :" />
    </children>
 </AnchorPane>
