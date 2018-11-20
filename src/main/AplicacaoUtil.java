@@ -1,6 +1,7 @@
 
 package main;
 
+
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -14,7 +15,7 @@ public class AplicacaoUtil {
   
      //Instância única que será guardada
     private static AplicacaoUtil instancia = null;
-    
+   
 
     
     private Stage telaAtual = null;
@@ -92,8 +93,7 @@ public class AplicacaoUtil {
     public Stage getTelaAtual() {
         return telaAtual;
     }
-    
-    
-    
+
+  
     
 }

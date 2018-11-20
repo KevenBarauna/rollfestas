@@ -12,6 +12,9 @@ import main.AplicacaoUtil;
 
 
 public class PrincipalFXMLController implements Initializable {
+    
+    @FXML
+    private Button btnUsuarios;
 
     @FXML
     private Label lblUsuario;
@@ -60,12 +63,12 @@ public class PrincipalFXMLController implements Initializable {
     
         @FXML
     void vaiParaCalculo(ActionEvent event) {
-        AplicacaoUtil.getInstancia().irParaTela("CalculosFXML.fxml");
+        AplicacaoUtil.getInstancia().novaTela("CalculosFXML.fxml");
     }
     
        @FXML
     void vaiParaEventos(ActionEvent event) {
-    AplicacaoUtil.getInstancia().irParaTela("EventosFXML.fxml");
+    AplicacaoUtil.getInstancia().novaTela("EventosFXML.fxml");
     }
     
     @FXML
@@ -73,5 +76,9 @@ public class PrincipalFXMLController implements Initializable {
         System.exit(0);
     }
     
+      @FXML
+    void vaiParaUsuarios(ActionEvent event) {
+        AplicacaoUtil.getInstancia().novaTela("UsuariosFXML.fxml");
+    }
     
 }

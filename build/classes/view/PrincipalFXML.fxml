@@ -50,6 +50,11 @@
                         <Font size="18.0" />
                      </font>
                   </Button>
+                  <Button fx:id="btnUsuarios" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#vaiParaUsuarios" prefHeight="60.0" prefWidth="250.0" styleClass="Btn" stylesheets="@../src/stylesheet.css" text="Usuários">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
                   <Button fx:id="btnSair" mnemonicParsing="false" onAction="#Sair" prefHeight="60.0" prefWidth="250.0" styleClass="Btn" stylesheets="@../src/stylesheet.css" text="Sair">
                      <font>
                         <Font size="18.0" />

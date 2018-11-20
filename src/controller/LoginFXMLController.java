@@ -1,6 +1,7 @@
 
 package controller;
 
+
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -15,12 +16,15 @@ import javafx.scene.input.KeyEvent;
 import main.AplicacaoUtil;
 import main.Conexao;
 
+
 /**
  * FXML Controller class
  *
  * @author Jan Cloude
  */
 public class LoginFXMLController implements Initializable {
+    
+    
   
     @FXML
     private PasswordField pswSenha;
@@ -35,20 +39,19 @@ public class LoginFXMLController implements Initializable {
     @FXML
     void Logar(ActionEvent event) {
         
+        
         if((txtUsuario.getText().equals("rollfestas")  && txtUsuario.getText() != null) &&
                 (pswSenha.getText().equals("@admin") && pswSenha.getText() != null)){
-            Conexao con = new Conexao();
+            
             AplicacaoUtil.getInstancia().irParaTela("PrincipalFXML.fxml");
-        }else{
+        } else{
            if(txtUsuario.getText().equals("") || pswSenha.getText().equals("")){
                 AplicacaoUtil.getInstancia().adicionarMensagemSimples(Alert.AlertType.ERROR, "Campos em Branco, por favor verifique os campos!");
             }else{
                AplicacaoUtil.getInstancia().adicionarMensagemSimples(Alert.AlertType.ERROR, "Usuário não encontrado!");
             }
-            
         }
-        
-        
+  
         
     }
     
@@ -60,7 +63,7 @@ public void txtPressed(KeyEvent ke)
     {
         if((txtUsuario.getText().equals("rollfestas")  && txtUsuario.getText() != null) &&
                 (pswSenha.getText().equals("@admin") && pswSenha.getText() != null)){
-            Conexao con = new Conexao();
+            
             AplicacaoUtil.getInstancia().irParaTela("PrincipalFXML.fxml");
         } else{
            if(txtUsuario.getText().equals("") || pswSenha.getText().equals("")){
@@ -80,7 +83,7 @@ public void botaoPressed(KeyEvent ke)
     {
         if((txtUsuario.getText().equals("rollfestas")  && txtUsuario.getText() != null) &&
                 (pswSenha.getText().equals("@admin") && pswSenha.getText() != null)){
-            Conexao con = new Conexao();
+            
             AplicacaoUtil.getInstancia().irParaTela("PrincipalFXML.fxml");
         } else{
            if(txtUsuario.getText().equals("") || pswSenha.getText().equals("")){
