@@ -37,7 +37,7 @@ public class VendasDAO {
     
     
     
-        public void cadastrar(Vendas vendas){
+        public void adicionar(Vendas vendas){
         String sql = "insert into venda (data, valor, tipo_pagamento) values (?,?,?)";
         
         try {

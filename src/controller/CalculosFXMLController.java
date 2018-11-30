@@ -88,10 +88,14 @@ public class CalculosFXMLController implements Initializable {
     @FXML
     private Button btnA3Calcular;
     
-      private float valorfinal=0;//VARIAL QUE A A LABEL FNAL RECEBE
-      private float l=0; //LARGURA
-      private float a=0; // ALTURA
+      private float valorfinal=0;//VARIAL QUE A A LABEL FINAL RECEBE DO BANNER
+      private float l=0; //LARGURA BANNER
+      private float a=0; // ALTURA BANNER
       private int i;//ILHOIS
+      
+      private int valorfinalint=0;//VARIAL QUE A A LABEL FINAL RECEBE
+      private int larg=0; //LARGURA
+      private int alt=0; // ALTURA
       
       
     @Override
@@ -107,13 +111,13 @@ public class CalculosFXMLController implements Initializable {
 
     @FXML
     void CalclularA3(ActionEvent event) {
-        l=Float.parseFloat(txta3Largura.getText());
-        a=Float.parseFloat(txta3Altura.getText());
-        l=25/l;
-	a=39/a;
-	valorfinal=a*l;
-        lblA3Quantidade.setText("Aproximadamente: " + valorfinal);
-       
+        larg= Integer.parseInt(txta3Largura.getText());
+        alt= Integer.parseInt(txta3Altura.getText());
+        larg=27/larg;
+        alt=40/alt;
+        valorfinalint=alt*larg;
+        lblA3Quantidade.setText("Aproximadamente: " + valorfinalint);
+     
     }
 
     @FXML
@@ -123,8 +127,8 @@ public class CalculosFXMLController implements Initializable {
         l=98/l;
 	a=98/a;
 	valorfinal=a*l;
-        lblQuantidade100x100.setText("Aproximadamente no METRO: " + valorfinal);
-        lblQuantidade100x50.setText("Aproximadamente no MEIO METRO: " + valorfinal/2);
+        lblQuantidade100x100.setText("Aproximadamente" + valorfinal);
+        lblQuantidade100x50.setText("Aproximadamente:  " + valorfinal/2);
     }
 
     @FXML

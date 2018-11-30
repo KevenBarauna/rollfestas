@@ -56,8 +56,8 @@
       <CheckBox fx:id="CbCartaoDebito" layoutX="604.0" layoutY="492.0" mnemonicParsing="false" text="Cartão de débito" />
       <Label fx:id="lblValorTotal" layoutX="489.0" layoutY="331.0" text="R$:" />
       <Label fx:id="lblTroco" layoutX="484.0" layoutY="424.0" text="R$:" />
-      <Button fx:id="btnCancelarVenda" layoutX="49.0" layoutY="743.0" mnemonicParsing="false" style="-fx-background-color: #e51d47;" text="Cancelar venda" textFill="WHITE" />
-      <Button fx:id="btnFinalizarCompra" layoutX="870.0" layoutY="749.0" mnemonicParsing="false" style="-fx-background-color: #13e257;" text="Finalizar venda" textFill="WHITE" />
+      <Button fx:id="btnCancelarVenda" layoutX="49.0" layoutY="743.0" mnemonicParsing="false" onAction="#CancelarCompra" style="-fx-background-color: #e51d47;" text="Cancelar venda" textFill="WHITE" />
+      <Button fx:id="btnFinalizarCompra" layoutX="870.0" layoutY="749.0" mnemonicParsing="false" onAction="#FinalizaCompra" style="-fx-background-color: #13e257;" text="Finalizar venda" textFill="WHITE" />
       <Button fx:id="btnDesconto" layoutX="18.0" layoutY="275.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="134.0" style="-fx-background-color: #22bdf0;" text="Desconto" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />

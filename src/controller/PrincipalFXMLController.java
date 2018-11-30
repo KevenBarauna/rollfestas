@@ -81,4 +81,11 @@ public class PrincipalFXMLController implements Initializable {
         AplicacaoUtil.getInstancia().novaTela("UsuariosFXML.fxml");
     }
     
+       @FXML
+    void vaiParaVendas(ActionEvent event) {
+        AplicacaoUtil.getInstancia().novaTela("VendasFXML.fxml");
+    }
+    
+    
+    
 }

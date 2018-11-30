@@ -20,7 +20,7 @@
          <children>
             <VBox layoutY="175.0" prefHeight="525.0" prefWidth="263.0" spacing="15.0">
                <children>
-                  <Button fx:id="btnVendas" mnemonicParsing="false" prefHeight="60.0" prefWidth="250.0" styleClass="Btn" stylesheets="@../src/stylesheet.css" text="Vendas">
+                  <Button fx:id="btnVendas" mnemonicParsing="false" onAction="#vaiParaVendas" prefHeight="60.0" prefWidth="250.0" styleClass="Btn" stylesheets="@../src/stylesheet.css" text="Vendas">
                      <font>
                         <Font size="18.0" />
                      </font>
