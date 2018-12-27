@@ -17,7 +17,6 @@
          </image>
       </ImageView>
       <Button fx:id="btninicio" layoutX="25.0" layoutY="25.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="81.0" style="-fx-background-color: #ffde00;" text="Incio" />
-      <ChoiceBox fx:id="selectProduto" layoutX="430.0" layoutY="199.0" prefHeight="25.0" prefWidth="403.0" />
       <Label layoutX="360.0" layoutY="129.0" text="Nova Venda">
          <font>
             <Font size="20.0" />
@@ -74,5 +73,6 @@
          </font>
       </Button>
       <Separator layoutX="228.0" layoutY="84.0" orientation="VERTICAL" prefHeight="698.0" prefWidth="17.0" />
+      <ComboBox fx:id="cmbProduto" layoutX="426.0" layoutY="199.0" prefHeight="25.0" prefWidth="294.0" />
    </children>
 </AnchorPane>

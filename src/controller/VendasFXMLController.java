@@ -2,8 +2,6 @@
 package controller;
 
 import java.net.URL;
-import java.time.Instant;
-import java.util.Date;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
@@ -11,14 +9,21 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
-import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import model.Vendas;
 import model.VendasDAO;
 import java.util.Date;
 import java.text.SimpleDateFormat;
-import model.UsuarioDAO;
+import java.util.ArrayList;
+import java.util.List;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.cell.PropertyValueFactory;
+import model.Produto;
+import model.ProdutoDAO;
+
 
 
 public class VendasFXMLController implements Initializable {
@@ -44,8 +49,8 @@ public class VendasFXMLController implements Initializable {
     @FXML
     private TextField txtPagamento;
 
-    @FXML
-    private ChoiceBox<?> selectProduto;
+      @FXML
+    private ComboBox<Produto> cmbProduto;
 
     @FXML
     private Button btnCancelarVenda;
@@ -70,11 +75,12 @@ public class VendasFXMLController implements Initializable {
     
     private VendasDAO vendasDao;
     
-    
+    private ProdutoDAO produtoDAO = new ProdutoDAO();
+     
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+       initCombos();
     }    
     
     
@@ -102,6 +108,19 @@ public class VendasFXMLController implements Initializable {
         
     }
     
+     private void initCombos(){
+       
+        try {
+            List<Produto> resultado = produtoDAO.buscarTodos();
+            if(!resultado.isEmpty()){
+              cmbProduto.setItems(FXCollections.observableList(resultado));
+            } 
+            
+        } catch (Exception e) {
+            exibirErro("Falha ao preencher combobox");
+            e.printStackTrace();
+        }
+     }
     
     //data, valor, tipo_pagamento
     @FXML
